@@ -27,7 +27,10 @@ if __name__ == '__main__':
     time_diff = wall_time - delta
     one_hour_ago = time_diff.strftime('%Y-%m-%d_%H_%M_%S')
     log_time = getLogTime()
-    if log_time >= one_hour_ago:
+    if log_time == None:
+        print(1)
+    elif log_time >= one_hour_ago:
         print(1)
     else:
         print(0)
+
