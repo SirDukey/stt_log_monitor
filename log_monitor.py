@@ -29,7 +29,7 @@ if __name__ == '__main__':
     log_time = getLogTime()
     if log_time == None:
         print(1)
-    elif log_time >= one_hour_ago:
+    elif log_time <= one_hour_ago:
         print(1)
     else:
         print(0)
