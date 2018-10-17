@@ -14,7 +14,7 @@ def getLogTime():
         itemB = listB[0]
         itemB = itemB.strip('[')
         itemB = itemB.strip(']')
-        return itemB[10:]        
+        return itemB[-19:]        
 
     elif error:
         return error
