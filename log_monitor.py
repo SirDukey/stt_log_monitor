@@ -23,13 +23,13 @@ def getLogTime():
 if __name__ == '__main__':
     
     wall_time = datetime.now()
-    delta = timedelta(hours=1)
+    delta = timedelta(hours=2)
     time_diff = wall_time - delta
-    one_hour_ago = time_diff.strftime('%Y-%m-%d_%H_%M_%S')
+    two_hours_ago = time_diff.strftime('%Y-%m-%d_%H_%M_%S')
     log_time = getLogTime()
     if log_time == None:
         print(1)
-    elif log_time <= one_hour_ago:
+    elif log_time <= two_hours_ago:
         print(1)
     else:
         print(0)
